@@ -2,6 +2,7 @@
 lock '3.4.0'
 
 set :application, 'niche'
+set :deploy_user, 'deploy'
 set :repo_url, 'git@github.com:bertomartin/niche.git'
 
 # setup rvm
