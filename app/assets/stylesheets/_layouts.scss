@@ -1,0 +1,28 @@
+/* can be categorized into *major and *minor components
+minor: forms, buttons, nav menus are contained in major components
+major: big blocks, header, footer, sidebar. only appear once, so can use ids
+*/
+
+body {
+  xbackground-color: black;
+}
+
+.l-logo {
+  margin-bottom: 2.5rem;
+}
+
+.l-header {
+  margin-bottom: 4rem;
+}
+
+.l-container {
+  width: 900px;
+}
+
+.l-cta { /* layout of call to action */
+  padding: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 700px;
+  margin: 0 auto;
+}

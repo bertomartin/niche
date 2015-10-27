@@ -8,8 +8,5 @@
     = csrf_meta_tags
   %body
     =render 'shared/header'
-    .container
-      .notice=notice
-      .alert=alert
-      = yield
+    = yield
     =render 'shared/footer'

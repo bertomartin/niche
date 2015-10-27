@@ -1,2 +1,30 @@
-.container
-  %h1 Home controller
+.container.l-container
+  -# %h1 Home controller
+  .row
+    .col-sm-12.text-center
+      .l-logo
+        =image_tag 'logo.png', :class => 'logo img-responsive'
+  %h1.text-center.call-out
+    Ambitious Projects require Disruptive Thinking
+  %hr
+
+  %p.secondary-callout.lead.text-center
+    Let me take your projects to the next level. I will provide insights and experience needed for
+    a successful project. Send me a quick hello below and get my free ebook on simple ways to improve
+    your life through design.
+    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est n
+
+.container-fluid.cta
+  .l-cta
+    %h2.text-center
+      Reach out to learn more.
+    %p.text-center
+      As a bonus, you'll receive my free interior design ebook!
+    %form
+      %fieldset.form-group
+        %input#inputName.form-control{:placeholder => "Your Name", :type => "email"}
+          %small.text-muted I'll never share your email with anyone else.
+      %fieldset.form-group
+        %input#exampleInputEmail1.form-control{:placeholder => "Your Email", :type => "email"}
+          %small.text-muted I'll never share your email with anyone else.
+      %button.btn.btn-primary.text-center{:type => "submit"} Submit

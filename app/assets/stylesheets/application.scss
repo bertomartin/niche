@@ -1,1 +1,13 @@
 @import "bootstrap";
+@import "layouts";
+@import "module";
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+
+  }
+.navbar-nav .nav-item {
+   float: none;
+   display: inline-block;
+ }

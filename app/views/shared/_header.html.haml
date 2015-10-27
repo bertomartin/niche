@@ -1,2 +1,17 @@
-.container
-  this is the header with navigation
+%header.l-header
+  %nav.navbar.navbar-dark.bg-inverse.navbar-fixed-top
+    .container
+      .navbar-header
+        %button.navbar-toggler.hidden-sm-up{:type => "button", :"data-toggle" => "collapse", :"data-target"=>"#niche-nav"}
+          ☰
+        -# %a.navbar-brand{:href => "#"} Niche
+      #niche-nav.collapse.navbar-collapse.navbar-toggleable-xs
+        %ul.nav.navbar-nav
+          %li.nav-item.active
+            %a{:href=>"#"} Home
+          %li.nav-item
+            %a{:href => "#"} Blog
+          %li.nav-item
+            %a{:href => "#"} About
+          %li.nav-item
+            %a{:href => "#"} Shop
