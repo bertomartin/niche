@@ -23,8 +23,8 @@ set :bundle_binstubs, nil
 #Rake::Task["deploy:compile_assets"].clear
 namespace :deploy do
 
-  #before :deploy, 'deploy:check_revision'
-  #after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
+  before :deploy, 'deploy:check_revision'
+  after 'deploy:symlink:shared', 'deploy:compile_assets_locally'
 
   after :restart, :clear_cache do
     on roles(:web), in: :groups, limit: 3, wait: 10 do
