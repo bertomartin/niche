@@ -1,4 +1,4 @@
-prset :stage, :production
+set :stage, :production
 set :branch, "master"
 
 set :server_name, "www.niche-ie.com niche-ie.com"
