@@ -11,7 +11,7 @@ namespace :deploy do
       sudo "chmod -R 755 #{release_path}/public/assets/"
     end
     run_locally do
-      # execute "rm -rf ./public/assets"
+      execute "rm -rf ./public/assets"
     end
   end
 end
