@@ -6,7 +6,7 @@
         =image_tag 'logo.png', :class => 'logo img-responsive'
   %h1.text-center.call-out
     Ambitious Projects require Disruptive Thinking
-  %hr
+  -# %hr
 
   %p.secondary-callout.lead.text-center
     Let me take your projects to the next level. <b>Interior Design</b>, <b>Space Planning/Layout</b>,
@@ -21,21 +21,19 @@
       Reach out to learn more.
     %p.text-center
       As a bonus, you'll receive my free interior design ebook!
-    %form
+    =form_tag('/home/create', method: :post) do
       %fieldset.form-group
-        %input#inputName.form-control{:placeholder => "Your Name", :type => "email"}
-          %small.text-muted I'll never share your email with anyone else.
+        =text_field_tag 'name', nil, placeholder: 'Your Name', class: 'form-control'
       %fieldset.form-group
-        %input#exampleInputEmail1.form-control{:placeholder => "Your Email", :type => "email"}
-          %small.text-muted I'll never share your email with anyone else.
-      %button.btn.btn-primary.text-center{:type => "submit"} Submit
+        =email_field_tag 'email', nil, placeholder: 'Your Email', class: 'form-control'
+      =submit_tag "Submit", class: 'btn btn-primary text-center'
 
 .container
   %p.lead.text-uppercase.benefits.text-center Why Niche?
   %h3.text-center Here's why you should use Niche-ie designs
 
 .container-fluid.l-benefit.benefits_alt
-  .container
+  .container.l-container
     .media
       %a.media-left{:href => "#"}
         =image_tag 'benefit.png', :class => 'media-object', :height=>240, :width=>240
@@ -48,7 +46,7 @@
           social and spiritual, and the ways in which your home can be modified to provide a more special and inspiring space.
 
 .container-fluid
-  .container
+  .container.l-container
     .media
       .media-body
         %h3.media-heading.text-center Stylish
@@ -60,7 +58,7 @@
         =image_tag 'benefit.png', :class => 'media-object', :height=>240, :width=>240
 
 .container-fluid.l-benefit.benefits_alt
-  .container
+  .container.l-container
     .media
       %a.media-left{:href => "#"}
         =image_tag 'benefit.png', :class => 'media-object', :height=>240, :width=>240

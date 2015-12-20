@@ -8,5 +8,9 @@
     = csrf_meta_tags
   %body
     =render 'shared/header'
+    .container.l-container
+      .row
+        .col-md-12
+          =flash_messages
     = yield
     =render 'shared/footer'
