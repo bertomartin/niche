@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+  get 'home' => 'home#index', as: :home
+  get 'services' => 'home#services', as: :services
+  get 'about' => 'home#about', as: :about
+  get 'shop' => 'home#shop', as: :shop
+
   root 'home#index'
 
   # Example of regular route:

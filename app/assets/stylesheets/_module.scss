@@ -1,11 +1,11 @@
 /* widgets: sidebars, callout, etc */
 
 .logo {
-  width: 500px;
+  width: 300px;
 }
 
 .call-out {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .secondary-callout {
   margin-bottom: 2.5rem;
@@ -24,4 +24,20 @@
 .benefits {
   color: green;
   margin-top: 4.0rem;
+}
+
+.benefits_alt {
+  background-color: #F7FAF0;
+}
+
+.benefits-text {
+  margin: 1rem 0;
+}
+
+.page-header{
+  margin-bottom: 2rem;
+}
+
+.about-content .media-heading{
+  margin-bottom: 20px;
 }

@@ -8,10 +8,12 @@
       #niche-nav.collapse.navbar-collapse.navbar-toggleable-xs
         %ul.nav.navbar-nav
           %li.nav-item.active
-            %a{:href=>"#"} Home
+            =link_to "Home", home_path
+          %li.nav-item
+            =link_to "Services", services_path
+          %li.nav-item
+            =link_to "About", about_path
           %li.nav-item
             %a{:href => "#"} Blog
           %li.nav-item
-            %a{:href => "#"} About
-          %li.nav-item
-            %a{:href => "#"} Shop
+            =link_to "Shop", shop_path
