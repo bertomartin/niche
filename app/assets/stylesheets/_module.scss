@@ -43,3 +43,18 @@
 }
 
 .alert {margin-top:40px;}
+
+.header-bg {
+  background-color: #111;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  xborder-bottom: 2px solid darken(#ccc, 10);
+}
+
+.header-bg .nav-item a {
+  color: #fff;
+  font-weight: normal;
+}
+.navbar-nav .nav-item + .nav-item {
+    margin-left: 1.5rem;
+}
