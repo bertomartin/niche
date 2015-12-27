@@ -57,3 +57,5 @@ gem 'devise-async' #send email in the background
 #bootstrap and helpers
 gem 'bh', '~> 1.2'
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+# gem 'monologue', path: '~/workspace/monologue'
+gem 'monologue', github: 'bertomartin/monologue', branch: 'niche'
