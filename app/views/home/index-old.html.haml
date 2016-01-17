@@ -1,0 +1,74 @@
+.container.l-container
+  -# %h1 Home controller
+  .row
+    .col-sm-12.text-center
+      .l-logo
+        =image_tag 'logo.png', :class => 'logo img-responsive'
+  %h1.text-center.call-out
+    Ambitious Projects require Disruptive Thinking
+  -# %hr
+
+  %p.secondary-callout.lead.text-center
+    Let me take your projects to the next level. <b>Interior Design</b>, <b>Space Planning/Layout</b>,
+    <b>Event Space Design</b> & <b>Shopping</b>;
+    I will provide insights and experience needed for
+    a successful project. Send me a quick hello below and <b>get my free ebook</b> on simple ways to improve
+    your life through design.
+
+%hr
+  
+.container
+  %p.lead.text-uppercase.benefits.text-center Why Niche?
+  %h3.text-center Here's why you should use Niche-ie designs
+
+.container-fluid.l-benefit.benefits_alt
+  .container.l-container
+    .media
+      %a.media-left{:href => "#"}
+        =image_tag 'benefit.png', :class => 'media-object', :height=>240, :width=>240
+      .media-body
+        %h3.media-heading.text-center Specialized
+        %p.benefits-text
+          “Home is where the heart is”. It should therefore be your happy and special place.
+          Niche incorporates practices and pieces to ensure that your home is exactly that.
+          We work with each client on a personalized level, taking into account your LIFESTYLE- First your LIFE and what it consists of- cultural,
+          social and spiritual, and the ways in which your home can be modified to provide a more special and inspiring space.
+
+.container-fluid
+  .container.l-container
+    .media
+      .media-body
+        %h3.media-heading.text-center Stylish
+        %p.benefits-text
+          Then there is your personal STYLE, what are your likes and how can they be incorporated to make your home as beautiful as you are.
+          Niche delivers one of a kind designs that often includes custom, Chic and carefully curated pieces, as well as unique arrangements that will definitely make your home inviting, pretty and practical.
+          Sourcing from local and small businesses are other ways in which we aim to deliver more personalized designs
+      %a.media-right{:href => "#"}
+        =image_tag 'benefit.png', :class => 'media-object', :height=>240, :width=>240
+
+.container-fluid.l-benefit.benefits_alt
+  .container.l-container
+    .media
+      %a.media-left{:href => "#"}
+        =image_tag 'benefit.png', :class => 'media-object', :height=>240, :width=>240
+      .media-body
+        %h3.media-heading.text-center Savvy
+        %p.benefits-text
+          Designing a space can be quite a challenge, Niche has the expertise and professionalism to simplify the process by providing
+          solutions to the most complex dilemma. We respect our client’s needs and will therefore make all attempts to be as resourceful as possible,
+          by strategically sourcing and planning your space in order to operate within budget and time constraints. We also seek earthly balances by being socially responsible to the best of our abilities- all attempts are made to incorporate environmentally safe practices and products into our designs
+
+.container-fluid.cta
+  .l-cta
+    %h2.text-center
+      Reach out to learn more.
+    %p.text-center
+      As a bonus, you'll receive my free interior design ebook!
+    =form_tag('/home/create', method: :post) do
+      %fieldset.form-group
+        =text_field_tag 'name', nil, placeholder: 'Your Name', class: 'form-control'
+      %fieldset.form-group
+        =email_field_tag 'email', nil, placeholder: 'Your Email', class: 'form-control'
+      %fieldset.form-group
+        =text_area_tag 'comment', nil, placeholder: 'Optional', class: 'form-control'
+      =submit_tag "Submit", class: 'btn btn-primary text-center pull-right'
