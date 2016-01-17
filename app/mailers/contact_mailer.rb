@@ -5,9 +5,10 @@ class ContactMailer < ApplicationMailer
   #
   #   en.contact_mailer.user_contact.subject
   #
-  def user_contact(user_email, user_name)
+  def user_contact(user_email, user_name, user_message)
     @userEmail = user_email
     @userName = user_name
+    @userMessage = user_message
 
     mail to: "brooklyn.niche@gmail.com", subject: "Niche-ie: New Contact!"
   end
